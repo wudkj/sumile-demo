@@ -1,6 +1,6 @@
 package cn.sumile.demo.spi.impl;
 
-import cn.sumile.demo.spi.SpiDemoService;
+import cn.sumile.demo.spi.SpiDemoServiceTest.SpiDemoService;
 
 /**
  * @Description:

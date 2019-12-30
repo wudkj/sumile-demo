@@ -10,10 +10,10 @@ import java.util.ServiceLoader;
  */
 public class MainClass {
     public static void main(String[] args) {
-        ServiceLoader<SpiDemoService> spiDemoService = ServiceLoader.load(SpiDemoService.class);
-        Iterator<SpiDemoService> iterator = spiDemoService.iterator();
+        ServiceLoader<SpiDemoServiceTest.SpiDemoService> spiDemoService = ServiceLoader.load(SpiDemoServiceTest.SpiDemoService.class);
+        Iterator<SpiDemoServiceTest.SpiDemoService> iterator = spiDemoService.iterator();
         while (iterator.hasNext()){
-            SpiDemoService service = iterator.next();
+            SpiDemoServiceTest.SpiDemoService service = iterator.next();
             service.showSpi();
         }
     }
